@@ -3,7 +3,7 @@
  */
 
 const add2Numbers = (num1, num2) => {
-  // Write code here
+  return num1 + num2;
 }
 
 // ex. [[paramArray], expectedResult]
