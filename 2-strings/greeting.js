@@ -2,7 +2,7 @@
  * Write a function that takes a name a returns a greeting
  */
 
-const greeting = (name) => {
+const greeting = (name1, name2) => {
   // Write code here
 }
 
