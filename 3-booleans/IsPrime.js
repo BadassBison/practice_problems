@@ -1,19 +1,14 @@
 /**
  * When passed a positive integer, return a boolean pertaining to if the number is prime
- *
- * To test: node 6-IsPrime.js
  */
 
 const isPrime = (num) => {
-  // Write code here
+  // Write your code here
 }
 
 // ex. [[paramArray], expectedResult]
 const testCases = [
-  [[0], false],
-  [[1], false],
-  [[2], true],
-  [[3], true]
+  // Write your own test cases here
 ];
 
-require('./test.js').test(isPrime, testCases);
+require('../test.js').test(isPrime, testCases);

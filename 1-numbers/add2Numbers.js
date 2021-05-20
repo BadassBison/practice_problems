@@ -1,7 +1,5 @@
 /**
  * Write a function that takes 2 integers and returns the sum
- *
- * To test: node 1-Add2Numbers.js
  */
 
 const add2Numbers = (num1, num2) => {
@@ -15,4 +13,4 @@ const testCases = [
   [[-1, 4], 3]
 ];
 
-require('./test.js').test(add2Numbers, testCases);
+require('../test.js').test(add2Numbers, testCases);

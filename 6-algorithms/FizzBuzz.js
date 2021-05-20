@@ -4,12 +4,10 @@
  * counting up to n. If an integer is divisible by 3 and 5, have 'FizzBuzz' instead
  * of the value. If the integer is divisible by 3, have 'Fizz' instead of the value.
  * If the integer is divisible by 5, have 'Buzz' instead of the value
- *
- * To test: node 4-FizzBuzz.js
  */
 
 const fizzBuzz = (num) => {
-  // Write code here
+  // Write your code here
 }
 
 // ex. [[paramArray], expectedResult]
@@ -18,4 +16,4 @@ const testCases = [
   [[5], ['1', '2', 'Fizz', '4', 'Buzz']]
 ];
 
-require('./test.js').test(fizzBuzz, testCases);
+require('../test.js').test(fizzBuzz, testCases);

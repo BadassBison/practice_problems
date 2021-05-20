@@ -1,7 +1,5 @@
 /**
  * Write a function that takes a name a returns a greeting
- *
- * To test: node 2-Greeting.js
  */
 
 const greeting = (name) => {
@@ -14,4 +12,4 @@ const testCases = [
   [['Colleen'], 'Hello Colleen!']
 ];
 
-require('./test.js').test(greeting, testCases);
+require('../test.js').test(greeting, testCases);
