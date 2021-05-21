@@ -1,10 +1,10 @@
 /**
- * sumOf2Nums<100
+ * are2NumsSum>50
  *
  * Add your description here
  */
 
-const sumOf2Nums<100 = () => {
+const are2NumsSumGreaterThan50 = () => {
   // Write code here
 }
 
@@ -13,5 +13,5 @@ const testCases = [
   // Write your test cases here
 ];
 
-require('../test.js').test(sumOf2Nums<100, testCases);
+require('../test.js').test(are2NumsSumGreaterThan50, testCases);
 

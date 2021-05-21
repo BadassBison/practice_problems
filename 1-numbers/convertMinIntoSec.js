@@ -1,7 +1,7 @@
 /**
  * convertMinIntoSec
  *
- * Add your description here
+ * When given minutes as a positive integer, return the total number of seconds
  */
 
 const convertMinIntoSec = () => {
