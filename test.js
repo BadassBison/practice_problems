@@ -3,13 +3,23 @@ module.exports = {
     const failingTests = [];
     testCases.forEach(([params, expectedResult], idx) => {
       if (typeof expectedResult === 'object') {
-        // Only Arrays right now
-        const actualResult = fn(...params);
-        if (!actualResult || !expectedResult.sort().every((item, idx) => {
-          console.log("item", item)
-          return item === actualResult[idx]
-        })) {
-          failingTests.push(`${idx + 1}: ${fn.name}(${params.join(', ')}) \n\t returned ${fn(...params)} \n\t expected ${JSON.stringify(expectedResult)}\n`)
+        if (expectedResult[0] === undefined) {
+          // const passingTest = true;
+          const actualResults = fn(...params);
+          Object.entries(expectedResult).forEach(([key, value], idx) => {
+            if (actualResults[key] !== value) {
+
+            }
+          });
+          console.log(expectedResult);
+        } else {
+          const actualResult = fn(...params);
+          if (!actualResult || !expectedResult.sort().every((item, idx) => {
+            console.log("item", item)
+            return item === actualResult[idx]
+          })) {
+            failingTests.push(`${idx + 1}: ${fn.name}(${params.join(', ')}) \n\t returned ${fn(...params)} \n\t expected ${JSON.stringify(expectedResult)}\n`)
+          }
         }
       } else {
         if (fn(...params) !== expectedResult) {

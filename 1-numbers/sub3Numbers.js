@@ -2,13 +2,15 @@
  * sub3Numbers
  */
 
-const sub3Numbers = (num1, num2, num3) => {
+const sub3Numbers = () => {
   // Write code here
 }
 
 // ex. [[paramArray], expectedResult]
 const testCases = [
-  // Write your test cases here
+  [[10, 5, 3], 2],
+  [[50, 50, 50], -50],
+  [[100, 25, 10], 65]
 ];
 
 require('../test.js').test(sub3Numbers, testCases);

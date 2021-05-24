@@ -1,7 +1,5 @@
 # Practice Problems
 
-##
-
 To create a new problem, in the terminal run
 > newproblem
 
